@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Montserrat:wght@200;300;400&display=swap');
+/*Aceder a los root desde cualquier elemento*/
+
+body{
+    font-family: 'Baskervville', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.Encabezado{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    
+   
+
+}
+/*Estilo para el efecto del encavezado*/
+.Encabezado::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-image: url(../Imagenes/Verde.jpg),linear-gradient(180deg, #0000008c, 0%,#0000008c 100%);
+   background-size: cover;
+   clip-path: polygon(0 0, 100% 0, 100% 31%, 50% 46%, 0 31%);
+   z-index: -1;
+}
+/*Navegacion*/
+.nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor{/**/
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    color: white;
+    
+}
+.tituloNav2{
+    margin-top: -2em;
+    text-align: center;
+    color: #F695E6;
+}
+.menu{
+    
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+    justify-content: end;
+}
+
+.menu{
+    color:#F695E6 ;
+    text-decoration: none;
+
+}
+
+.items{
+    list-style: none;
+   
+}
+.items:hover{
+    background-color: white;  
+}
+.menu:hover{
+    color:#95F6A5;
+}
+
+.InicioContenedor{
+    text-align: center;
+    font-size: 24px;
+}
+.Inicio1{
+    font-size: 3em;
+    color: #FAD3F4 ;
+}
+
+/*Main*/
+.Cuerpo{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+}
+.Contenido{
+    display: inline-block;
+    border: 2px solid #D3FAD9;
+    text-align: center;
+    width: 46%;
+    margin: 16px 1.5%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.Contenido:hover{
+    border-color: #FAD3F4;
+}
+.ImagenesPortadas{
+    width: 242px;
+    height: 308px;
+}
+
+.ImagenesPortadas:hover{
+    width: 246px;
+    height: 312px;
+}
+
+.Enunciado{
+    font-size: 26px;
+}
+.Enunciado:hover{
+    font-size: 30px;
+}
+.DescripcionPortada{
+    font-size: 16px;
+}
+.Precio{
+    font-size: 26px;
+}
+
+
+/*footer*/
+.footer{
+    background-color: #EBFDEE;
+ }
+ 
+.Nosotros{
+     display: flex;
+     border-bottom: 2px solid #FAD3F4;
+     padding: 36px;
+     flex-wrap: wrap;
+ }
+.FooterDiv2{
+    margin-top: 2em;
+    margin-left: 36em;
+}
+.FooterDiv2 h3{
+   
+    font-size: 25px;
+    height: 34px;
+}
+.redesSociales{
+   margin-left: 4px;
+}
+.Logo-de-Afrodita{
+    width: 12em;
+    margin-left: 36em;
+}
+
+.footer__copyright{
+    font-size: 12px;
+    margin-left: 49em;
+}
